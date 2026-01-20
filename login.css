@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.login-page{
+    background: url("bmw-blk.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== GLASS EFFECT CARD ===== */
+.glass {
+    width: 350px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);  
+    backdrop-filter: blur(2px);            
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    color: #fff;
+    margin-right: 520px;
+}
+
+.glass h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 14px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+form input::placeholder {
+    color: #ddd;
+}
+
+form button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    background: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #fff;
+    color: #000;
+}
