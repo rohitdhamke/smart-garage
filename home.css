@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#home{
+    height:100vh;
+    width:100%;
+    background-image: url("porche-blk.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+nav{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);  
+    backdrop-filter: blur(2px);
+    margin-top: -310px;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    position: relative;
+    z-index: 10;
+}
+nav:hover{
+    background: rgba(255, 255, 255, 0.25);  
+    backdrop-filter: blur(4px);
+    transition: 0.3s;
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 40px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'inter', sans-serif;
+}
+a:hover{
+    color: #000000;
+    transition: 0.3s;
+}
+
+.heading{
+    color: white;
+    font-size: 58px;
+    font-family: 'Arial Black', sans-serif;
+    text-align: center;
+}
+.tag-line{
+    color: white;
+    font-size: 24px;
+    font-family: 'Verdana', sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+/* section services */
+#service{
+    height:100vh;
+    width:100%;
+    background-image: url("porche-blk.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* section booking */
+#booking{
+    height:100vh;
+    width:100%;
+    background-image: url("porche-blk.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* section price calculator */
+#price-calculator{
+    height:100vh;
+    width:100%;
+    background-image: url("porche-blk.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* section contact */
+#contact{
+    height:100vh;
+    width:100%;
+    background-image: url("porche-blk.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
