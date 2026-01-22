@@ -59,3 +59,70 @@
     letter-spacing: 1px;
 }
 
+
+
+/* ========================= */
+/* LARGE LAPTOPS (<=1200px) */
+/* ========================= */
+@media (max-width: 1200px) {
+
+    .garage {
+        font-size: 120px;
+    }
+}
+
+
+/* ========================= */
+/* TABLETS (<=900px) */
+/* ========================= */
+@media (max-width: 900px) {
+
+    .garage {
+        font-size: 90px;
+        margin-top: 32vh;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 26px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+}
+
+
+/* ========================= */
+/* MOBILE (<=600px) */
+/* ========================= */
+@media (max-width: 600px) {
+
+    .garage {
+        font-size: 56px;
+        margin-top: 30vh;
+        letter-spacing: 2px;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 200px;
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    .tagline {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    /* Improve mobile video performance */
+    .bg-video {
+        object-fit: cover;
+        filter: brightness(0.7);
+    }
+}

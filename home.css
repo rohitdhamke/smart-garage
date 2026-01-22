@@ -45,6 +45,22 @@ nav:hover{
     backdrop-filter: blur(4px);
     transition: 0.3s;
 }
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.btn-logout{
+    padding: 7px 10px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-logout:hover{
+    background-color: rgb(235, 52, 52);
+}
 
 .logo{
     height: 60px;
@@ -55,6 +71,7 @@ nav:hover{
 .nav-links{
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 a{
     text-decoration: none;
@@ -289,3 +306,166 @@ label{
 }
 
 
+/* ========================= */
+/* SMALL LAPTOPS (<=1200px) */
+/* ========================= */
+@media (max-width: 1200px) {
+
+    .heading {
+        font-size: 48px;
+    }
+
+    .service-h1 {
+        font-size: 64px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #booking h1,
+    #booking-form {
+        margin-right: 0;
+    }
+}
+
+
+/* ========================= */
+/* TABLETS (<=900px) */
+/* ========================= */
+@media (max-width: 900px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 0;
+    }
+
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+
+    .tag-line {
+        font-size: 18px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 240px;
+    }
+
+    #booking h1 {
+        font-size: 56px;
+        margin: 0;
+        text-align: center;
+    }
+
+    #booking-form {
+        margin: 0;
+    }
+
+    #price-Calculator h1 {
+        margin-top: 0;
+        font-size: 36px;
+    }
+}
+
+
+/* ========================= */
+/* MOBILE (<=600px) */
+/* ========================= */
+@media (max-width: 600px) {
+
+    nav {
+        padding: 10px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+
+    .tag-line {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 22px;
+        margin-bottom: 0;
+    }
+
+    .service-h1 {
+        font-size: 42px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    #booking {
+        padding: 20px;
+    }
+
+    #booking h1 {
+        font-size: 40px;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+
+    #booking-form {
+        width: 100%;
+        height: auto;
+    }
+
+    #price-Calculator h1 {
+        font-size: 32px;
+        margin-top: 0;
+    }
+
+    #price-Calculator input {
+        width: 90%;
+    }
+
+    #contact h1 {
+        font-size: 36px;
+    }
+
+    #contact p {
+        font-size: 16px;
+    }
+}
