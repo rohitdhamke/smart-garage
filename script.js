@@ -23,7 +23,7 @@ if (signupForm) {
 
         localStorage.setItem("user", JSON.stringify(user));
         alert("Registration Successful✅")
-        window.location.href = "home.html";
+        window.location.href = "login.html";
     });
 
 }
@@ -61,3 +61,49 @@ function logout() {
     alert("Logged Out Successfully");
     window.location.href="index.html"
 }
+
+
+function calculatePrice() {
+    let total = 0;
+    let services = document.querySelectorAll('input[type="checkbox"]');
+
+    services.forEach(service => {
+        if (service.checked) {
+            total += Number(service.value);
+        }
+    });
+
+    document.getElementById("result").innerText =
+        "Total: ₹" + total;
+}
+
+
+document.getElementById("booking-form").addEventListener("submit", function (e) {
+    e.preventDefault(); 
+
+
+    let name = document.getElementById("u-name").value;
+    let carType = document.getElementById("cartype").value;
+    let serviceType = document.getElementById("servicetype").value;
+
+    if (carType === "" || serviceType === "") {
+        alert("❌ Please select car type and service type");
+        return;
+    }
+
+
+    alert(
+        "✅ Booking Confirmed!" 
+    );
+
+    document.getElementById("book-result").innerHTML = `
+        <div class="confirmation">
+            <h2>✅ Booking Confirmed</h2>
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Car Type:</strong> ${carType}</p>
+            <p><strong>Service:</strong> ${serviceType}</p>
+        </div>
+    `;
+
+    document.getElementById("booking-form").reset();
+});

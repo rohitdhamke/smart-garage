@@ -40,28 +40,28 @@
             <div class="cards">
                 <div class="card">
                     <h1>Oil Change</h1>
-                    <p style="font-weight: bold;">Price:$1200</p>
+                    <p style="font-weight: bold;">Price:₹1200</p>
                     <p>High quality engine oil replacement ensuring smooth
                         performance and longer engine life</p>
                 </div>
 
                 <div class="card">
                     <h1>Car Wash</h1>
-                    <p style="font-weight: bold;">Price:$500</p>
+                    <p style="font-weight: bold;">Price:₹500</p>
                     <p>Complete exterior and interior car wash for a spotless
                         showroom finish</p>
                 </div>
 
                 <div class="card">
                     <h1>Wheel Alignment</h1>
-                    <p style="font-weight: bold;">Price:$1500</p>
+                    <p style="font-weight: bold;">Price:₹1500</p>
                     <p>Accurate wheel alignment improving vehicle stability,
                         handling, and tire lifespan</p>
                 </div>
 
                 <div class="card">
                     <h1>Engine Repair</h1>
-                    <p style="font-weight: bold;">Price:$5000</p>
+                    <p style="font-weight: bold;">Price:₹5000</p>
                     <p>Expert engine diagnostics and repair restoring power,
                         efficiency, and reliability</p>
                 </div>
@@ -92,17 +92,37 @@
                     <option value="wheel">Wheel Alignment</option>
                     <option value="engine">Engine Repair</option>
                 </select>
-                <button style="margin-top: 10px;" class="btn"
-                    type="submit">Submit</button>
+                <button style="margin-top: 10px;" class="btn" type="submit">Submit</button>
+                <div id="book-result"></div>
             </form>
+            
         </section>
 
         <!-- price calculator section -->
         <section id="price-Calculator">
-            <h1 style="font-size: 50px;">Service Price Calculator</h1>
-            <input type="number" id="calculate" placeholder="Calculate your services">
-            <button class="btn">Calaculate</button>
-            <div id="result">   </div>
+            <h1>Service Price Calculator</h1>
+            <div class="service">
+                <label>
+                    <input type="checkbox" value="1200"> Oil Change (₹1200)
+                </label>
+                <label>
+                    <input type="checkbox" value="500"> Car Wash (₹500)
+                </label>
+                <label>
+                    <input type="checkbox" value="1500"> Wheel Alignment
+                    (₹1500) 
+                </label>
+                <label>
+                    <input type="checkbox" value="5000"> Engine Repair
+                    (₹5000)
+                </label>
+
+                <button onclick="calculatePrice()" class="btn">Calculate</button>
+
+            <h2 id="result">Total: ₹0</h2>
+            </div>
+            
+
         </section>
 
         <!-- contact section -->
