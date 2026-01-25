@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "PlanetKosmos";
+    src: url("fonts/PLANK___.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,11 +30,14 @@
 
 
 .garage {
+    font-family: "PlanetKosmos";
     color: white;
-    font-size: 165px;
+    font-size: 85px;
     text-align: center;
-    margin-top: 35vh;
+    margin-left: -399px;
+    margin-top: 120px;
 }
+
 
 
 .btns {
@@ -38,6 +48,7 @@
 }
 
 .btn {
+    display: flex;
     padding: 12px 30px;
     font-size: 18px;
     cursor: pointer;
@@ -45,11 +56,17 @@
     color: white;
     border: 2px solid white;
 }
+
+
 .btn:hover {
     background-color: white;
     color: black;
     transition: 0.3s;
 }
+.btn-icon {
+    transition: 0.3s ease;
+}
+
 
 .tagline {
     color: #ddd;
@@ -96,23 +113,24 @@
 /* ========================= */
 /* MOBILE (<=600px) */
 /* ========================= */
-@media (max-width: 600px) {
+@media (min-width: 390px) and (max-width: 844px) {
 
     .garage {
-        font-size: 56px;
-        margin-top: 30vh;
-        letter-spacing: 2px;
+        font-size: 36px;
+        margin-left: -140px;
+        margin-top: 195px;
+        margin-bottom: 90px;
     }
 
     .btns {
         flex-direction: column;
         gap: 15px;
+        align-items: center;
     }
 
     .btn {
         width: 200px;
-        font-size: 15px;
-        padding: 10px 20px;
+        justify-content: center;
     }
 
     .tagline {
