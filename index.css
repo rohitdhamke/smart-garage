@@ -116,14 +116,3 @@
 }
 
 
-@media (min-width: 481px) and (max-width: 767px){
-    .bg-video {
-        object-fit: cover;
-        filter: brightness(0.7);
-    }
-
-    .garage{
-        margin-top: 29px;
-        margin-bottom: 0;
-    }
-}
