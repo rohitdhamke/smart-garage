@@ -12,6 +12,7 @@ if (signupForm) {
 
         if (name === "" || email === "" || password === "") {
             alert("All feilds are required❌");
+
             return;
         }
 
@@ -107,3 +108,6 @@ document.getElementById("booking-form").addEventListener("submit", function (e) 
 
     document.getElementById("booking-form").reset();
 });
+
+
+

@@ -77,13 +77,144 @@
 }
 
 
+@media (max-width: 480px) {
+
+    .garage {
+        font-size: 44px;
+        margin-left: 0;
+        margin-top: 195px;
+        text-align: center;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .btn {
+        width: 200px;
+        justify-content: center;
+    }
+
+    .tagline {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .bg-video {
+        filter: brightness(0.7);
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .garage {
+        font-size: 36px;
+        margin-left: 0;
+        margin-top: 120px;
+        text-align: center;
+    }
+
+    .btns {
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .btn {
+        width: 180px;
+    }
+
+    .tagline {
+        font-size: 13px;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .bg-video {
+        filter: brightness(0.75);
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .garage {
+        font-size: 52px;
+        margin-left: 0;
+        margin-top: 230px;
+        text-align: center;
+    }
+
+    .btns {
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .btn {
+        width: 220px;
+    }
+
+    .tagline {
+        font-size: 16px;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .bg-video {
+        filter: brightness(0.7);
+    }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .garage {
+        font-size: 58px;
+        margin-left: -200px;
+        margin-top: 160px;
+    }
+
+    .btn {
+        width: 240px;
+    }
+
+    .bg-video {
+        filter: brightness(0.7);
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+
+    .garage {
+        font-size: 60px;
+        margin-left: -250px;
+        margin-top: 150px;
+    }
+
+    .bg-video {
+        filter: brightness(0.7);
+    }
+}
+
+
+@media (min-width: 1441px) {
+
+    .garage {
+        font-size: 85px;
+        margin-left: -399px;
+        margin-top: 120px;
+    }
+}
 
 
 
 
-/* mobile vertical */
-
-@media (min-width: 390px) and (max-width: 844px) {
+/* @media (min-width: 390px) and (max-width: 844px) {
 
     .garage {
         font-size: 44px;
@@ -116,3 +247,15 @@
 }
 
 
+@media (min-width: 845px) and (max-width: 1440px) {
+    .garage {
+        font-size: 60px;
+        margin-left: -250px;
+        margin-top: 150px;
+    }
+
+    .bg-video {
+        object-fit: cover;
+        filter: brightness(0.7);
+    }
+} */
