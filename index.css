@@ -80,8 +80,9 @@
 @media (max-width: 480px) {
 
     .garage {
+        margin-bottom: 79px;
         font-size: 44px;
-        margin-left: 0;
+        margin-left: -154px;
         margin-top: 195px;
         text-align: center;
     }

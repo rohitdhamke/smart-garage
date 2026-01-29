@@ -72,3 +72,22 @@ form button:hover {
     background: #fff;
     color: #000;
 }
+
+
+
+@media (max-width: 480px){
+    .login-page{
+        background: url("bmw-blk-mb.png");
+        background-size: cover;
+        background-position: element center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .glass {
+        margin-right: 0;
+    }
+}

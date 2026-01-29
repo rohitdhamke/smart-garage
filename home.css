@@ -477,8 +477,8 @@ label{
     }
 
     .service-h1 {
-        font-size: 42px;
-        margin-bottom: 40px;
+        font-size: 33px;
+        margin-bottom: 5px;
         text-align: center;
     }
 
@@ -494,6 +494,8 @@ label{
 
     #booking {
         padding: 20px;
+        display: block;
+
     }
 
     #booking h1 {
@@ -504,7 +506,11 @@ label{
 
     #booking-form {
         width: 100%;
-        height: auto;
+    }
+    .confirmation{
+    margin-left: 0px;
+    width: 322px;
+    margin-top: 79px;
     }
 
     #price-Calculator h1 {
@@ -516,8 +522,16 @@ label{
         width: 90%;
     }
 
+    #result{
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+    position: static;
+    }
+
     #contact h1 {
         font-size: 36px;
+        margin-bottom: 70px;
     }
 
     #contact p {
