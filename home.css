@@ -23,7 +23,7 @@
 #home{
     height:100vh;
     width:100%;
-    background-image: url("porche-blk.jpg");
+    background-image: url("images/porche-blk.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -163,7 +163,7 @@ a:hover{
 #service{
     height:100vh;
     width:100%;
-    background-image: url("mercedes.jpg");
+    background-image: url("images/mercedes.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -213,7 +213,7 @@ a:hover{
 #booking{
     height:100vh;
     width:100%;
-    background-image: url("porche2.jpg");
+    background-image: url("images/porche2.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -319,7 +319,7 @@ label{
 #price-Calculator{
     height:80vh;
     width:100%;
-    background-image: url("lambo-blk.jpg");
+    background-image: url("images/lambo-blk.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -367,7 +367,7 @@ label{
 #contact{
     height:60vh;
     width:100%;
-    background-image: url("contact.jpg");
+    background-image: url("images/contact.jpg");
     background-size: cover;
     background-position: center;
     display: flex;

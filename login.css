@@ -6,7 +6,7 @@
 }
 
 .login-page{
-    background: url("bmw-blk.jpg") no-repeat center center fixed;
+    background: url("images/bmw-blk.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -77,7 +77,7 @@ form button:hover {
 
 @media (max-width: 480px){
     .login-page{
-        background: url("bmw-blk-mb.png");
+        background: url("images/bmw-blk-mb.png");
         background-size: cover;
         background-position: element center;
         background-repeat: no-repeat;
