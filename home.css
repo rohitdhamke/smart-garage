@@ -19,6 +19,7 @@
     scroll-behavior: smooth;
 }
 
+
 #home{
     height:100vh;
     width:100%;
@@ -46,13 +47,13 @@ nav{
     align-items: center;
     background: rgba(255, 255, 255, 0.15);  
     backdrop-filter: blur(2px);
-    margin-top: -275px;
     padding: 14px;
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
-    position: relative;
-    z-index: 10;
+    z-index: 1000;
+    position: fixed;
+    top: 20px;
 }
 nav:hover{
     background: rgba(255, 255, 255, 0.25);  
@@ -88,6 +89,27 @@ li{
     gap: 30px;
     align-items: center;
 }
+
+.nav-links a{
+    position: relative;
+}
+
+.nav-links a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+}
+
+
 a{
     text-decoration: none;
     color: white;
@@ -106,6 +128,7 @@ a:hover{
     font-family: 'PlanetKosmos', sans-serif;
     font-weight: 100;
     margin-bottom: 20px;
+    margin-top: -60px;
 }
 .head-div{
     display: flex;
@@ -160,6 +183,7 @@ a:hover{
     display: flex;
     grid-template-columns: max-content;
 }
+
 .card{
     background: rgba(255, 255, 255, 0.15);  
     color: white;
@@ -171,7 +195,14 @@ a:hover{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    cursor: pointer;
 }
+
+.card:hover {
+    transform: translateY(-10px);
+    transition: 0.4s ease;
+}
+
 
 .para-card{
     font-family: quicksand-variable, sans-serif;
