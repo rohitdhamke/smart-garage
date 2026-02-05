@@ -111,3 +111,35 @@ document.getElementById("booking-form").addEventListener("submit", function (e) 
 
 
 
+
+
+
+function toggleMenu() {
+    const navLinks = document.querySelector(".nav-links");
+    const toggleBtn = document.querySelector(".menu-toggle");
+
+    navLinks.classList.toggle("active");
+
+
+
+    if (navLinks.classList.contains("active")) {
+        toggleBtn.innerHTML = "✕";
+    } else {
+        toggleBtn.innerHTML = "☰";
+    }
+}
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll(".nav-links a");
+    const navLinks = document.querySelector(".nav-links");
+    const toggleBtn = document.querySelector(".menu-toggle");
+
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            toggleBtn.innerHTML = "☰";
+        });
+    });
+});
